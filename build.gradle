@@ -1,0 +1,33 @@
+group          = "com.etendoerp"
+version        = "1.0.0"
+description    = "Etendo Go industry template"
+ext.artifact   = "go.template"
+ext.repository = "https://maven.pkg.github.com/etendosoftware/com.etendoerp.go.template"
+
+configurations {
+    moduleDependencyContainer
+}
+
+publishing {
+    publications {
+        "com.etendoerp.go.template"(MavenPublication) {
+            from components.java
+            groupId    = group
+            artifactId = artifact
+            version    = version
+        }
+    }
+    repositories {
+        maven {
+            url = "https://maven.pkg.github.com/etendosoftware/com.etendoerp.go.template"
+        }
+    }
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation('com.etendoerp:go:[1.0.0,)')
+}
