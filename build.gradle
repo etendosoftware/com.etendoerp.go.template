@@ -29,5 +29,4 @@ repositories {
 }
 
 dependencies {
-    implementation('com.etendoerp:go:[1.0.0,)')
 }
