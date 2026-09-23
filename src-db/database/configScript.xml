@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+  <vector>
+    <versionInfo version="26.2.5"/>
+    <removeIndexChange tableName="AD_CLIENT" indexName="AD_CLIENT_NAME">
+      <index name="AD_CLIENT_NAME" unique="true">
+        <index-column name="NAME"/>
+      </index>
+    </removeIndexChange>
+  </vector>
